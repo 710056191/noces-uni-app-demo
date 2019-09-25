@@ -1,0 +1,106 @@
+.main{
+	position: relative;
+	height: 75%;
+	
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.text-area {
+	display: flex;
+	width: 85%;
+	margin: 10px 0;
+	text-align: left;
+	align-items: center;
+}
+
+.text-area-input{
+	width: 100%;
+	margin-left: 5px;
+}
+
+.uni-row{
+	flex-direction: row;
+}
+
+.btn-area{
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 5px 0;
+}
+
+.content-nav{
+	width: 100%;
+	.uni-grid{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		.uni-grid-item{
+			flex: 1;
+		}
+	}
+}
+
+.uni-grid-icon-text{
+	height: 35px;
+	width: 35px;
+	border-radius: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.uni-grid{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	uni-text{
+		flex: 1;
+	}
+	.uni-grid-item{
+		flex: 1;
+	}
+}
+
+.new{
+	width: 100%;
+	margin: 10px 0;
+}
+h3{
+	padding:10px ;
+}
+
+.new-content{
+	width: 100%;
+	display: flex;
+	
+}
+.new-left{
+	flex: 1.5;
+	padding: 20px 0;
+}
+.new-right{
+	flex: 2.5;
+	border-left: 1px solid #ddd;
+	padding-left: 15px;
+	
+}
+.new-right-top{
+	display: flex;
+	justify-content: space-around;
+}
+
+.new-right-botoom{
+	display: flex;
+	justify-content: space-around;
+}
+
+
