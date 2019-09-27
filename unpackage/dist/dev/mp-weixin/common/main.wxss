@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+@font-face {
+  font-family: 'iconfont';  /* project id 1434119 */
+  src: url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.eot');
+  src: url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1434119_9tpuq085kvp.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+text[class*="icon-"],
+view[class*="icon-"],
+button[class*="icon-"] {
+    font-family: "iconfont";
+    font-size: inherit;
+    font-style: normal;
+}
+

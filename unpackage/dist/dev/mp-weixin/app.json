@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookrack/BookRack",
+    "pages/myinfo/My"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/icon/tabbar/icon_study_fill.svg",
+        "selectedIconPath": "./static/icon/tabbar/icon_study_fill-blue.svg",
+        "text": "书城"
+      },
+      {
+        "pagePath": "pages/bookrack/BookRack",
+        "iconPath": "./static/icon/tabbar/book.svg",
+        "selectedIconPath": "./static/icon/tabbar/book-blue.svg",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/myinfo/My",
+        "iconPath": "./static/icon/tabbar/CN_taobaowangwang.svg",
+        "selectedIconPath": "static/icon/tabbar/CN_taobaowangwang-blue.svg",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
