@@ -5,7 +5,7 @@
 			<icon type="search" size="16" color="blue"></icon>
 			<input class="text-area-input" type="text" confirm-type="search" placeholder="找书籍,搜评论" />
 		</view>
-		<view >
+		<view class="swiper">
 			<image src="../../static/logo.png"></image>
 		</view>
 		<view class="content-nav">
@@ -36,13 +36,13 @@
 				<view class="new-left">
 					<image src="../../static/logo.png" style="width: 114px;height: 100px;"></image>
 					<h5>经典畅销书</h5>
-					<text>斑马人的生活</text>
+					<text style="font-size: 14px;color:#999 ;">斑马人的生活</text>
 				</view>
 				<view class="new-right">
 					<view class="new-right-top">
 						<view>
 							<h5>限时免费</h5>
-							<text>感知</text>
+							<text style="font-size: 14px;color:#999 ;">感知</text>
 						</view>
 						<view>
 							<image src="../../static/logo.png" style="width: 80px;height: 90px;"  />
@@ -50,8 +50,8 @@
 					</view>
 					<view class="new-right-botoom">
 						<view>
-							<h5>限时免费</h5>
-							<text>感知</text>
+							<h5>新书上架</h5>
+							<text style="font-size: 14px;color:#999 ;">思维的力量</text>
 						</view>
 						<view>
 							<image src="../../static/logo.png" style="width: 80px;height: 90px;" />
@@ -60,22 +60,14 @@
 				</view>
 			</view>
 		</view>
-	</view>
-	<view class="uni-flex uni-row btn-area">
-		<uniGrid :column="3" :show-border="false" :square="false">
-			<uniGridItem>
-				<uni-icon class="iconfont icon-icon_study_fill">&#xebaf;</uni-icon>
-				<text style="background: none;" >书城</text>
-			</uniGridItem>
-			<uniGridItem>
-				<uni-icon class="iconfont icon-book">&#xe61f;</uni-icon>
-				<text style="background: none;" >书架</text>
-			</uniGridItem>
-			<uniGridItem>
-				<uni-icon class="iconfont icon-CN_taobaowangwang">&#xe65d;</uni-icon>
-				<text style="background: none;" >我的</text>
-			</uniGridItem>
-		</uniGrid>
+		<view style="width: 100%;">
+			<view>
+				<h3>书赠同杯</h3>
+			</view>
+			<view>
+				<BookList />
+			</view>
+		</view>
 	</view>
 	</view>
 </template>
@@ -85,11 +77,12 @@
 	import uniGrid from '@/components/uni-grid/uni-grid.vue'
 	import uniGridItem from '@/components/uni-grid-item/uni-grid-item.vue'
 	import uniIcon from '@/components/uni-icons/uni-icons.vue'
+	import BookList from './BookList.vue'
 	export default {
-		components:{uniGrid,uniGridItem,uniIcon},
+		components:{uniGrid,uniGridItem,uniIcon,BookList},
 		data() {
 			return {
-				title: 'Hello'
+				
 			}
 		},
 		onLoad() {
@@ -101,7 +94,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 	@import url("./index.scss");
 	
 </style>

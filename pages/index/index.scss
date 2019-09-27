@@ -1,7 +1,6 @@
 .main{
 	position: relative;
 	height: 75%;
-	
 }
 .content {
 	display: flex;
@@ -9,6 +8,17 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 60px;
+	
+}
+
+.swiper{
+	width: 95%;
+	height: 170px;
+	text-align: center;
+}
+.swiper>uni-image{
+	width: 90%;
+	height: 170px;
 }
 
 .text-area {
@@ -44,19 +54,23 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		.uni-grid-item{
+			// width: 25%;
 			flex: 1;
+			
 		}
 	}
 }
-
 .uni-grid-icon-text{
 	height: 35px;
 	width: 35px;
 	border-radius: 35px;
 	text-align: center;
 	line-height: 35px;
+	margin-bottom: 10px;
 }
+
 
 .uni-grid{
 	width: 100%;
@@ -72,10 +86,12 @@
 
 .new{
 	width: 100%;
-	margin: 10px 0;
+	padding: 10px 5px;
+	box-sizing: border-box;
 }
 h3{
-	padding:10px ;
+	padding:10px 5px;
+	font-size: 20px;
 }
 
 .new-content{
@@ -86,21 +102,32 @@ h3{
 .new-left{
 	flex: 1.5;
 	padding: 20px 0;
+	text-align: center;
+	
+	>h5{
+		font-size: 16px;
+	}
+	
+	>uni-text{
+		>span{
+			font-size: 12px;
+		}
+	}
 }
 .new-right{
 	flex: 2.5;
 	border-left: 1px solid #ddd;
-	padding-left: 15px;
-	
+	padding: 0 5px 0 15px;
 }
 .new-right-top{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .new-right-botoom{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 

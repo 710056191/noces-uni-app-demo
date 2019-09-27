@@ -5,12 +5,55 @@
 			"style": {
 				"navigationBarTitleText": "书城"
 			}
+		},{
+			"path":"pages/bookrack/BookRack",
+			"style":{
+				"navigationBarTitleText":"书架"
+			}
+		},
+		{
+			"path":"pages/myinfo/My",
+			"style":{
+				"navigationBarTitleText":"我的"
+			}
 		}
 	],
+	"condition":{
+		//模式配置，仅开发期间生效
+		"current":0,
+		"list":[{
+			"name":"test" ,//模式名称
+			"path":"pages/index/index" //启动页面，必选
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"selectedColor":"#007AFF",
+		"backgroundColor":"#fff",
+		"list":[
+			{
+			"pagePath":"pages/index/index",
+			"iconPath":"./static/icon/tabbar/icon_study_fill.svg",
+			"selectedIconPath":"./static/icon/tabbar/icon_study_fill-blue.svg",
+			"text":"书城"
+		},
+		{
+			"pagePath":"pages/bookrack/BookRack",
+			"iconPath":"./static/icon/tabbar/book.svg",
+			"selectedIconPath":"./static/icon/tabbar/book-blue.svg",
+			"text":"书架"
+		},
+		{
+			"pagePath":"pages/myinfo/My",
+			"iconPath":"./static/icon/tabbar/CN_taobaowangwang.svg",
+			"selectedIconPath":"static/icon/tabbar/CN_taobaowangwang-blue.svg",
+			"text":"我的"
+		}
+		]
 	}
 }
